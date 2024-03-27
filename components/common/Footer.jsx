@@ -4,16 +4,35 @@ import { Icon } from "@mui/material";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { FaLocationDot } from "react-icons/fa6";
+import { MdCall } from "react-icons/md";
+import React, { useState } from "react";
+import {  toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { IoMdMail } from "react-icons/io";
+import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+
 
 
 const Footer = () => {
+  const [email, setEmail] = useState('');
+  const handleSubmit = (event) => {
+   event.preventDefault(); 
+   console.log("Subscribed email:", email); 
+   toast.success("Subscribe successfully!");
+ 
+ };
+ 
+ const handleEmailChange = (event) => {
+   setEmail(event.target.value); 
+ };
   return (
     <>
-      <footer className="border-t border-stroke bg-[black] dark:border-strokedark dark:bg-blacksection">
+      <footer className="border-t border-stroke bg-[black] ">
         <div className="container mx-auto">
           {/* <!-- Footer Top --> */}
           <div className="py-20 lg:py-20">
-            <div className="flex flex-wrap gap-8 lg:justify-between lg:gap-0">
+            <div className="flex flex-wrap  gap-8 justify-between items-start lg:gap-10">
               <motion.div
                 variants={{
                   hidden: {
@@ -30,7 +49,7 @@ const Footer = () => {
                 whileInView="visible"
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: true }}
-                className="animate_top w-full lg:w-1/4"
+                className="animate_top "
               >
                 <a href="index.html" className="relative">
                   <Image
@@ -38,38 +57,38 @@ const Footer = () => {
                     height={160}
                     src="/logo/logo-footer.svg"
                     alt="Logo"
-                    // className="dark:hidden"
+                 
                   />
                   
                 </a>
                 <div>
                   
                 </div>
-                <div className="mb-2 flex gap-2 mt-6">
-                  <Icon>
-                    <LocationOn style={{ color: "white" }} />
-                  </Icon>
+                <div className="flex justify-start mb-2 items-center mt-6 gap-4">
+              
+                    <FaLocationDot className="text-white text-[20px]" />
+                 
                   <p className="  text-[#FFF5EE90] ">
-                    Kathika Haveli imli Mohalla, Kucha Pati Ram Sita Ram Bazaar,
-                    Gali Khatikan, Near Himmat Garh Police Station Delhi 110006
+                    Kathika Haveli, Imli Mohalla,<br/> Kucha Pati Ram, Sita Ram Bazaar,<br/>
+                    Gali Khatikan, Near Himmat<br/> Garh Police Station, Delhi 110006
                   </p>
                 </div>
 
-                <div className="mb-2  flex gap-2 ">
-                  <Icon>
-                    <Email style={{ color: "white" }} />
-                  </Icon>
+                <div className="  flex gap-4 mb-2 ">
+             
+                    <IoMdMail className="text-white text-[20px]" />
+               
                   <a
                      href="mailto:info@kathika.in"
-                    className="font-small  text-[#FFF5EE90] dark:text-white"
+                    className="font-small  text-[#FFF5EE90] hover:text-white"
                   >
                     info@kathika.in
                   </a>
                 </div>
-                <div className="mb-2 flex gap-2 ">
-                  <Icon>
-                    <Phone style={{ color: "white" }} />
-                  </Icon>
+                <div className=" flex gap-4 mb-2 justify-start items-center ">
+             
+                    <MdCall className="text-white text-[20px]" />
+             
                   <div>
                     <div className="flex justify-start items-center gap-2">
                       <p className="text-[#FFF5EE90]">David:</p>
@@ -90,129 +109,8 @@ const Footer = () => {
                 </div>
               </motion.div>
 
-              <div className="flex w-full flex-col gap-8 md:flex-row md:justify-between md:gap-0 lg:w-2/3 xl:w-7/12">
-              {/* <motion.div
-                  variants={{
-                    hidden: {
-                      opacity: 0,
-                      y: -20,
-                    },
-
-                    visible: {
-                      opacity: 1,
-                      y: 0,
-                    },
-                  }}
-                  initial="hidden"
-                  whileInView="visible"
-                  transition={{ duration: 1, delay: 0.1 }}
-                  viewport={{ once: true }}
-                  className="animate_top"
-                >
-                  <h4 className="mb-9 text-itemtitle2 font-medium text-white dark:text-white">
-                   About Us
-                  </h4>
-
-                  <ul>
-                   
-                    <li>
-                      <a
-                        href="/our-story"
-                        className="mb-3 inline-block text-[#FFF5EE90] hover:text-[white]"
-                      >
-                     Our Story
-                      </a>
-                    </li>
-                   
-                    <li>
-                      <a
-                        href="/kathika-museum"
-                        className="mb-3 inline-block text-[#FFF5EE90] hover:text-[white]"
-                      >
-                      Kathika Museum
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/neem-ki-haveli"
-                        className="mb-3 inline-block text-[#FFF5EE90] hover:text-[white]"
-                      >
-                   Neem ki Haveli
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/"
-                        className="mb-3 inline-block text-[#FFF5EE90] hover:text-[white]"
-                      >
-                  Gallery
-                      </a>
-                    </li>
-                   
-                    
-                  </ul>
-                </motion.div>
-                <motion.div
-                  variants={{
-                    hidden: {
-                      opacity: 0,
-                      y: -20,
-                    },
-
-                    visible: {
-                      opacity: 1,
-                      y: 0,
-                    },
-                  }}
-                  initial="hidden"
-                  whileInView="visible"
-                  transition={{ duration: 1, delay: 0.1 }}
-                  viewport={{ once: true }}
-                  className="animate_top"
-                >
-                  <h4 className="mb-9 text-itemtitle2 font-medium text-white dark:text-white">
-                   About Us
-                  </h4>
-
-                  <ul>
-                   
-                    <li>
-                      <a
-                        href="/our-story"
-                        className="mb-3 inline-block text-[#FFF5EE90] hover:text-[white]"
-                      >
-                     Our Story
-                      </a>
-                    </li>
-                   
-                    <li>
-                      <a
-                        href="/kathika-museum"
-                        className="mb-3 inline-block text-[#FFF5EE90] hover:text-[white]"
-                      >
-                      Kathika Museum
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/neem-ki-haveli"
-                        className="mb-3 inline-block text-[#FFF5EE90] hover:text-[white]"
-                      >
-                   Neem ki Haveli
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/"
-                        className="mb-3 inline-block text-[#FFF5EE90] hover:text-[white]"
-                      >
-                  Gallery
-                      </a>
-                    </li>
-                   
-                    
-                  </ul>
-                </motion.div> */}
+             
+            
                 <motion.div
                   variants={{
                     hidden: {
@@ -236,7 +134,14 @@ const Footer = () => {
                   </h4>
 
                   <ul>
-                   
+                  <li>
+                      <a
+                        href="/about"
+                        className="mb-3 inline-block text-[#FFF5EE90] hover:text-[white]"
+                      >
+                       About
+                      </a>
+                    </li>
                     <li>
                       <a
                         href="/culture-heritage"
@@ -245,7 +150,14 @@ const Footer = () => {
                         Culture & Heritage
                       </a>
                     </li>
-                   
+                    <li>
+                      <a
+                        href="/experiences-activities"
+                        className="mb-3 inline-block text-[#FFF5EE90] hover:text-[white]"
+                      >
+                     Experiences & Activities
+                      </a>
+                    </li>
                     <li>
                       <a
                         href="/events-collaborations"
@@ -309,22 +221,27 @@ const Footer = () => {
                     Subscribe to receive future updates
                   </p>
 
-                  <form action="#">
+                  <form onSubmit={handleSubmit}>
                     <div className="relative">
                       <input
                         type="text"
+                        value={email}
+                        onChange={handleEmailChange}
+                        required
                         placeholder="Email address"
-                        className="w-full rounded-full border border-stroke px-6 py-3 shadow-solid-11 focus:border-primary focus:outline-none dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
+                        className="w-full rounded-full border border-stroke px-6 py-3 shadow-solid-11 focus:border-primary focus:outline-none    "
                       />
 
                       <button
+                      type="submit"
                         aria-label="signup to newsletter"
                         className="absolute right-0 p-4"
                       >
                         <svg
-                          className="fill-[#757693] hover:fill-primary dark:fill-white"
+                          className="fill-[#757693] hover:fill-primary "
                           width="20"
                           height="20"
+
                           viewBox="0 0 20 20"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -345,14 +262,14 @@ const Footer = () => {
                     </div>
                   </form>
                 </motion.div>
-              </div>
+             
               
             </div>
           </div>
           {/* <!-- Footer Top --> */}
 
           {/* <!-- Footer Bottom --> */}
-          <div className="flex flex-col flex-wrap items-center justify-center gap-5 border-t border-stroke py-7 dark:border-strokedark lg:flex-row lg:justify-between lg:gap-0">
+          <div className="flex flex-col flex-wrap items-center justify-center gap-5 border-t border-stroke py-7  lg:flex-row lg:justify-between lg:gap-0">
             <motion.div
               variants={{
                 hidden: {
@@ -377,11 +294,11 @@ const Footer = () => {
                     English
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#" className="text-[#FFF5EE90] hover:text-[white]">
                     Privacy Policy
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a href="#" className="text-[#FFF5EE90] hover:text-[white]">
                     Support
@@ -432,8 +349,8 @@ const Footer = () => {
               className="animate_top"
             >
               <ul className="flex items-center gap-5">
-                <li>
-                  <a href="#" aria-label="social icon">
+                {/* <li>
+                  <a href="https://www.facebook.com/Kathika.OldDelhi/" target="_blank" aria-label="social icon">
                     <svg
                       className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
                       width="24"
@@ -481,7 +398,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" aria-label="social icon">
+                  <a href="https://www.linkedin.com/company/kathikaolddelhi/?originalSubdomain=in" target="_blank" aria-label="social icon">
                     <svg
                       className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
                       width="24"
@@ -523,7 +440,10 @@ const Footer = () => {
                       </defs>
                     </svg>
                   </a>
-                </li>
+                </li> */}
+                <Link href="https://www.facebook.com/Kathika.OldDelhi/" target="_blank"><FaFacebookF className="text-[#D1D8E0] text-[20px] hover:text-white"/></Link>
+                <Link href="https://www.linkedin.com/company/kathikaolddelhi/?originalSubdomain=in" target="_blank"><FaLinkedinIn className="text-[#D1D8E0] text-[20px] hover:text-white"/></Link>
+                <Link href="https://www.instagram.com/kathikaolddelhi/?hl=en" target="_blank"><FaInstagram className="text-[#D1D8E0] text-[20px] hover:text-white"/></Link>
               </ul>
             </motion.div>
           </div>

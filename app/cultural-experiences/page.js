@@ -1,5 +1,5 @@
 import ExpSection from "@/components/exprience";
-import Experience from "@/components/exprience/Experience";
+import Experience from "@/components/activities/Experience";
 
 
 export default function Page() {
@@ -9,4 +9,11 @@ export default function Page() {
     <Experience/>
     </>
   );
+}
+export function generateMetadata(){
+  return {
+      title: "Experiences & Activities",
+
+     
+  }
 }
