@@ -7,10 +7,11 @@ const Support = () => {
     <div className='bg-white py-10'>
     <div className='container mx-auto'>
     <h3 className='text-[45px] font-Yeseva text-center'>Support Us</h3>
+    <p className='md:text-[24px] text-[16px] font-Alice text-justify pt-3'>Kathika Cultural Centre would like you to join us and be a part of our journey. You can show us support by being part of our exciting cultural events. You can also contribute to the Kathika Cultural Trust with your voluntary donations, so we can continue to work towards creating more awareness about Delhi’s rich history, heritage, and cultural traditions and keep hosting specially curated events for all to enjoy.</p>
        <div className='flex flex-col  justify-center items-center  gap-10 py-10'>
     
        <div className=' w-full'>
-       <form className='  '>
+       {/* <form className='  '>
            <div className='flex w-full  justify-start items-start lg:gap-10 gap-4'>
            <div className='flex flex-col lg:w-[20%] w-full justify-start items-start gap-5'>
             <label className='md:text-[25px] text-[16px] font-Alice'>Full Name</label>
@@ -26,7 +27,7 @@ const Support = () => {
              <div className='flex justify-center pt-10 items-center '>
              <button className="px-7 py-3 rounded-full bg-body text-[20px] font-Yeseva" >Submit</button>
              </div>
-        </form>
+        </form> */}
        </div>
         <div className=' flex flex-col justify-center items-center w-full'>
           <h3 className='text-[45px] font-Alice font-semibold text-center uppercase'>Kathika trust</h3>

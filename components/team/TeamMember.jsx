@@ -6,6 +6,7 @@ import Lovely3 from "../../public/team/lovely (3).png";
 import Lovely4 from "../../public/team/lovely (4).png";
 import Lovely5 from "../../public/team/lovely5.png";
 import Lovely6 from "../../public/team/founder.png";
+import Lovely7 from "../../public/team/faijal.jpeg";
 
 const list = [
   {
@@ -66,8 +67,8 @@ const TeamMember = () => {
               />
             </div>
             <div className="flex flex-col justify-center items-center gap-1 py-4">
-              <p className="md:text-[25px] text-[]16px">Atul Khanna</p>
-              <p className="md:text-[20px] text-[]16px">Founder & Curator</p>
+              <p className="md:text-[25px] text-[]">Atul Khanna</p>
+              <p className="md:text-[20px] text-[]">Founder & Curator</p>
             </div>
           </div>
           <div className="bg-white">
@@ -142,7 +143,7 @@ const TeamMember = () => {
           <div className="bg-white">
             <div>
               <Image
-                src=''
+                src={Lovely7}
                 alt="Faisal"
                 className="h-[350px] w-[300px] object-cover"
               />

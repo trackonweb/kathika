@@ -28,7 +28,7 @@ const Featured = () => {
         <h1 className="md:text-[45px] text-[32px] font-Yeseva">
         Kathika was featured in ...
         </h1>
-        <p className="md:text-[27px] text-[16px] font-Alice">
+        <p className="md:text-[24px] text-[16px] font-Alice">
           Click to read and explore the Articles
         </p>
       </div>

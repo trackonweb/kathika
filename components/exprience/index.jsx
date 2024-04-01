@@ -12,9 +12,9 @@ const ExpSection = () => {
    <div className='container mx-auto'>
       <div className='   flex flex-col justify-center items-center pt-5 pb-3 gap-2'>
        <h1 className='md:text-[45px] text-[32px] font-Yeseva '> Experiences & Activities</h1>
-       <p className='md:text-[27px] text-[16px] md:text-center text-justify'>Indulge in the nostalgic colors of the medieval traditions of Mehman Nawazi and Mehfils through our specially curated cultural experience at Kathika : Cultural Centre and Museum.
+       <p className='md:text-[24px] text-[16px] md:text-center text-justify'>Indulge in the nostalgic colors of the medieval traditions of Mehman Nawazi and Mehfils through our specially curated cultural experience at Kathika : Cultural Centre and Museum.
 </p>
-<p className='md:text-[27px] text-[16px] md:text-center text-justify'>Delve into the realm of  <span className='font-bold italic'>“Purani Dilli ki Tehzeeb”</span></p>
+<p className='md:text-[24px] text-[16px] md:text-center text-justify'>Delve into the realm of  <span className='font-bold italic'>“Purani Dilli ki Tehzeeb”</span></p>
       </div>
     </div>
    </div>

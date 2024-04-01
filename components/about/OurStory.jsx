@@ -20,7 +20,7 @@ const OurStory = () => {
                   <p className='border-b-4 border-b-black pt-3 flex justify-center w-[200px] text-center items-center'></p>
                 </div>
                 <div>
-                  <p className='md:text-[27px] text-[16px] pt-3 text-justify'>
+                  <p className='md:text-[24px] text-[16px] pt-3 text-justify'>
                   The captivating journey of Kathika began in 2015 when our founder, Atul khanna, came across a newspaper article detailing the unfortunate neglect of this late 19th century architectural gem. This Museum Haveli, which once belonged to the Kashmiri Pandits, is a testament to the late Mughal Era that embodies the essence of a period spanning from 1800 to 1860. The Haveli was found in a dilapidated condition and brought forward the deteriorating condition of the havelis in Old Delhi. Mr. Atul Khanna, a Heritage Conservationist and a patron of Art and Culture, was driven by his deep passion for Indian Heritage and Culture and took up the responsibility of restoring these havelis to their former glory.
                   </p>
                 </div>
@@ -39,7 +39,7 @@ const OurStory = () => {
 
         {showMore && (
           <div>
-            <p className='md:text-[27px] text-[16px] pt-3 text-justify'>
+            <p className='md:text-[24px] text-[16px] pt-3 text-justify'>
               Mr. Atul Khanna along with a team of architects, for over a period of 8 years, made successful attempts in preserving and reviving the two 19th century havelis. For the restoration process, Mahatta Archival Photographs were referred by the team which aided the reconstruction of the architecture of the Haveli.
             </p>
             <div className='flex  flex-col lg:flex-row justify-center items-center gap-[32px] pt-3'>
@@ -49,12 +49,12 @@ const OurStory = () => {
                 </div>
               </div>
               <div className='lg:w-[50%] w-full'>
-                <p className='md:text-[27px] text-[16px] pt-3 text-justify'>
+                <p className='md:text-[24px] text-[16px] pt-3 text-justify'>
                   Opposite to Kathika, stands the Neem ki Haveli that serves as a precious link to the past, where the grandeur of Mughal architecture converges with the echoes of British architectural sensibilities, offering visitors a captivating glimpse into the city’s historical narrative.
                 </p>
               </div>
             </div>
-            <p className='md:text-[27px] text-[16px] pt-3 text-justify pb-3'>
+            <p className='md:text-[24px] text-[16px] pt-3 text-justify pb-3'>
               The first floor of the Neem ki Haveli, added at a later stage, distinguishes itself from the ground floor in terms of architectural features that are more Mughal in its features. Notably, the rooms above the left dalan exhibit influences of British architectural styles, evident through the semicircular door openings and the use of coloured glass on the windows. This infusion of British elements showcases the evolving character of the city during that era.
             </p>
           </div>

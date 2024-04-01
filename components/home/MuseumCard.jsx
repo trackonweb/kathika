@@ -35,9 +35,9 @@ const router = useRouter();
               
               <div className=" flex flex-col justify-center items-center">
                 <p className="border-b-4 border-b-black w-[200px] py-5 "></p>
-              <p className="text-[25px] font-Alice pt-4">Museum Visit</p>
-              <p className="text-[25px] font-Alice">10:00 a.m. to 6:00 p.m.</p>
-              <p className="text-[25px] font-Alice">{`(Closed on Mondays)`}</p>
+              <p className="text-[24px] font-Alice pt-4">Museum Visit</p>
+              <p className="text-[24px] font-Alice">10:00 a.m. to 6:00 p.m.</p>
+              <p className="text-[24px] font-Alice">{`(Closed on Mondays)`}</p>
               </div>
               <div className="py-4">
                 <button className="px-7 py-3 rounded-full bg-body text-[20px]" onClick={handleOpenContactModel}>FOR ENQUIRY</button>
@@ -52,10 +52,10 @@ const router = useRouter();
               
               <div className=" flex flex-col justify-center items-center">
                 <p className="border-b-4 border-b-black w-[200px] py-5 "></p>
-              <p className="text-[25px] text-center font-Alice pt-4">Cultural Experience Program
+              <p className="text-[24px] text-center font-Alice pt-4">Cultural Experience Program
 </p>
-              <p className="text-[25px] font-Alice">11:30 a.m. to 1: 30 p.m. </p>
-              <p className="text-[25px] font-Alice">{`(Closed on Mondays)`}</p>
+              <p className="text-[24px] font-Alice">11:30 a.m. to 1: 30 p.m. </p>
+              <p className="text-[24px] font-Alice">{`(Closed on Mondays)`}</p>
               </div>
               <div className="py-4">
                 <button onClick={handlebtn} className="px-7 py-3  rounded-full bg-body  text-[20px] uppercase"  >Know More</button>
