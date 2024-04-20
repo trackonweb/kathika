@@ -17,6 +17,9 @@ import Brand11 from "../../public/brands/toi 1.png";
 import Brand12 from "../../public/brands/patriot.png";
 import Brand13 from "../../public/brands/mintLounge.png";
 import Brand14 from "../../public/brands/authIndia.png";
+import Brand15 from "../../public/brands/tribune.png";
+import Brand16 from "../../public/brands/print.avif";
+
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
 import Link from "next/link";
@@ -28,14 +31,14 @@ const Featured = () => {
         <h1 className="md:text-[45px] text-[32px] font-Yeseva">
         Kathika was featured in ...
         </h1>
-        <p className="md:text-[24px] text-[16px] font-Alice">
-          Click to read and explore the Articles
+        <p className="md:text-[20px] text-[16px] ">
+        Click to read and explore
         </p>
       </div>
       <div className=" bg-[#c8ae91] py-5">
         <Marquee pauseOnHover="true">
           <div>
-            <Link href={"/"}>
+            <Link href={"https://www.outlooktraveller.com/editors-picks/celebrating-people/in-conversation-with-atul-khanna-founder-of-kathika-delhi"}    target="_blank">
               {" "}
               <Image
                 src={Brand1}
@@ -71,7 +74,7 @@ const Featured = () => {
             </Link>
           </div>
           <div>
-            <Link href={"/"}>
+            <Link href={"https://www.architecturaldigest.in/story/a-restored-haveli-in-old-delhi-aims-to-revive-the-culture-of-courtyard-baithaks-kathika-cultural-centre-restoration/"}    target="_blank">
               {" "}
               <Image
                 src={Brand4}
@@ -81,7 +84,7 @@ const Featured = () => {
             </Link>
           </div>
           <div>
-            <Link href={"/"}>
+            <Link href={"https://lbb.in/delhi/kathika-old-delhi/"}    target="_blank">
               {" "}
               <Image
                 src={Brand5}
@@ -132,7 +135,7 @@ const Featured = () => {
             </Link>
           </div>
           <div>
-            <Link href={"/"}>
+            <Link href={"https://www.tripadvisor.com/Attraction_Review-g304551-d26685037-Reviews-Kathika_Culture_Centre_Museum-New_Delhi_National_Capital_Territory_of_Delhi.html" }    target="_blank">
               {" "}
               <Image
                 src={Brand9}
@@ -194,11 +197,31 @@ const Featured = () => {
             </Link>
           </div>
           <div>
-            <Link href={"/"}>
+            <Link href={"https://authindia.com/newly-restored-haveli-turned-cultural-centre-kathika-in-old-delhi-offers-vintage-delicacies-of-shahjahanabad/"}    target="_blank">
               {" "}
               <Image
                 src={Brand14}
                 alt={Brand14}
+                className="h-24 w-36 object-contain mr-9"
+              />
+            </Link>
+          </div>
+          <div>
+            <Link href={"https://www.tribuneindia.com/news/features/haveli-heritage-restoration-efforts-in-old-delhi-offer-hope-608115"}    target="_blank">
+              {" "}
+              <Image
+                src={Brand15}
+                alt={Brand15}
+                className="h-24 w-36 object-contain mr-9"
+              />
+            </Link>
+          </div>
+          <div>
+            <Link href={"https://theprint.in/feature/around-town/hell-penetrated-my-heaven-old-delhi-havelis-crumbling-shahjahanabad-now-a-commercial-slum/1997420/"}    target="_blank">
+            
+              <Image
+                src={Brand16}
+                alt={Brand16}
                 className="h-24 w-36 object-contain mr-9"
               />
             </Link>

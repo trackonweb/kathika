@@ -2,13 +2,24 @@
 import { useState } from 'react';
 import { IoClose } from "react-icons/io5";
 
-const CalendarModel = ({ handleCloseCalendar, handleMonthSelect, isCalendarOpen }) => {
+const CalendarModel = ({ handleCloseCalendar, handleMonthSelect, isCalendarOpen, setFilteredEvents ,eventlist }) => {
   const [selectedMonth, setSelectedMonth] = useState('');
 
   const handlebtn = (month) => {
-    setSelectedMonth(month);
-    handleMonthSelect(month); // Pass selected month to the parent component
+    if (month === '') {
+
+      setSelectedMonth('');
+    
+      setFilteredEvents(eventlist);
+
+      handleMonthSelect(''); 
+    } else {
+      setSelectedMonth(month);
+      handleMonthSelect(month); 
+    }
   }
+  
+  
 
   return (
     <div>
@@ -20,7 +31,10 @@ const CalendarModel = ({ handleCloseCalendar, handleMonthSelect, isCalendarOpen 
       >
        <div className='relative bg-white md:p-8 p-2 rounded-md shadow-md'>
          <h5 className='text-[27px] font-bold tracking-wide text-center'> 2024 Events Calendar </h5>
-         <div className='grid grid-cols-3 gap-4 pt-6'>
+         <div className='w-full pt-6'> 
+         <button onClick={() => handlebtn('')} className='bg-[#222222]  w-full px-5 py-2 rounded-md shadow-md text-white text-[16px] font-semibold tracking-wide '>All Events</button>
+         </div>
+         <div className='grid grid-cols-3 pt-4 gap-4 '>
            <button onClick={() => handlebtn('january')} className='bg-[#222222] px-5 py-2 rounded-md shadow-md text-white text-[16px] font-semibold tracking-wide '>January</button>
            <button onClick={() => handlebtn('february')} className='bg-[#222222] px-5 py-2 rounded-md shadow-md text-white text-[16px] font-semibold tracking-wide  hover:bg-[#000000]'>February</button>
            <button onClick={() => handlebtn('march')} className='bg-[#222222] px-5 py-2 rounded-md shadow-md text-white text-[16px] font-semibold tracking-wide  hover:bg-[#000000]'>March</button>

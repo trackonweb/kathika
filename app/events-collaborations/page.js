@@ -11,7 +11,8 @@ import ImageSlider from "@/components/common/ImageSlider";
 export default function Page (){
     return(
         <>
-        <ImageSlider images={[Events2]}/>
+        <ImageSlider images={[Events2]} text={`Kathika Events and Collaborations`} des={`Experience the vibrant cultures of India and the world through our specially curated events and collaborative projects at Kathika Cultural Centre. Kathika also ties up with artists of different genres on occasions to celebrate art and culture
+`}/>
         <HeroSection heading={`Kathika Events and Collaborations`} des1={`Experience the vibrant cultures of India and the world through our specially curated events and collaborative projects at Kathika Cultural Centre
 `} des2={`Kathika also ties up with artists of different genres on occasions to celebrate art and culture`} />
    

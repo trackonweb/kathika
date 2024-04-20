@@ -13,7 +13,7 @@ const TrustBanner = ({title, description, img}) => {
         <div className='flex flex-col  gap-10 justify-between items-center py-20 px-10 '>
 <div className='flex flex-col items-center justify-center  gap-3  w-full'> 
                <h3 className='text-black text-center md:text-[45px] text-[32px] font-Yeseva'> {title}</h3>
-           <p className='md:text-[25px] text-[16px] font-Alice text-center text-black'>{description} </p>
+           <p className='md:text-[20px] text-[16px]  leading-7 text-center text-black'>{description} </p>
             </div>
            
         </div>

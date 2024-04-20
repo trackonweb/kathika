@@ -12,7 +12,7 @@ const Baithaks = () => {
        <div className='flex flex-col  gap-10 justify-between items-center py-20 px-10 '>
 <div className='flex flex-col items-center justify-center  gap-3  w-full'> 
              <h3 className='md:text-[45px] text-[32px] text-center font-Yeseva py-5'>{`Kathika Baithaks`}</h3>
-          <p className='md:text-[27px] text-[16px] font-Alice text-center text-black'>{`Kathika Baithak is a contemporary take on the traditional concept of baithaks or gatherings for insightful discussions on Indian Art, Culture and History`} </p>
+          <p className='md:text-[20px] text-[16px]  leading-7 text-center text-black'>{`Kathika Baithak is a contemporary take on the traditional concept of baithaks or gatherings for insightful discussions on Indian Art, Culture and History`} </p>
 
            </div>
           

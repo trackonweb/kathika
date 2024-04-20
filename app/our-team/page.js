@@ -6,7 +6,7 @@ import HeroSection from "@/components/common/HeroSection";
 export default function Page (){
     return(
         <>
-        <ImageSlider images={[TeamSlide]}/>
+        <ImageSlider images={[TeamSlide]} text={`The Team of Kathika Cultural Centre`}/>
         <HeroSection heading={`The Team of Kathika Cultural Centre`}/>
         <TeamMember/>
         </>

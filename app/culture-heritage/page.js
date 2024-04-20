@@ -10,10 +10,9 @@ import HeroSection from "@/components/common/HeroSection";
 export default function Page (){
     return(
         <>
-        <ImageSlider images={[Slide1, Slide2, Slide3, Slide4]}/>
-        <HeroSection heading={`Old Delhi’s Culture and Heritage`} des1={`Situated in the heart of Delhi where vibrant history and culture blends itself with the urban lifestyle, Old Delhi has beautifully preserved and nurtured the heritage that still lingers in the bustling lanes, bazaars, houses and courtyards of the forgotten Havelis. 
-`} des2={`The walled city presents the rich tapestry of living heritage and traditions of the medieval years that are still thriving in the lanes of Purani Dilli. 
-`}/>
+        <ImageSlider images={[Slide1, Slide2, Slide3, Slide4]} text={`Old Delhi’s Culture and Heritage`} des={`Situated in the heart of Delhi where vibrant history and culture blends itself with the urban lifestyle, Old Delhi has beautifully preserved and nurtured the heritage that still lingers in the bustling lanes, bazaars, houses and courtyards of the forgotten Havelis. The walled city presents the rich tapestry of living heritage and traditions of the medieval years that are still thriving in the lanes of Purani Dilli.`}/>
+        <HeroSection heading={`Old Delhi’s Culture and Heritage`} des1={`Situated in the heart of Delhi where vibrant history and culture blends itself with the urban lifestyle, Old Delhi has beautifully preserved and nurtured the heritage that still lingers in the bustling lanes, bazaars, houses and courtyards of the forgotten Havelis. The walled city presents the rich tapestry of living heritage and traditions of the medieval years that are still thriving in the lanes of Purani Dilli.  
+`} />
         <HBanner/>
         <Hcards/>
         </>

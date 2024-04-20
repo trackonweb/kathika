@@ -2,11 +2,12 @@ import Image from "next/image";
 import React from "react";
 import Lovely1 from "../../public/team/lovely1.png";
 import Lovely2 from "../../public/team/lovely (2).png";
-import Lovely3 from "../../public/team/lovely (3).png";
+import Lovely3 from "../../public/team/4.png";
 import Lovely4 from "../../public/team/lovely (4).png";
 import Lovely5 from "../../public/team/lovely5.png";
 import Lovely6 from "../../public/team/founder.png";
-import Lovely7 from "../../public/team/faijal.jpeg";
+import Lovely7 from "../../public/team/3.png";
+import Lovely8 from "../../public/team/1.jpeg";
 
 const list = [
   {
@@ -49,6 +50,11 @@ const list = [
   {
     title: "David",
     post: "Relations Manager",
+    img: Lovely5,
+  },
+  {
+    title: "Arun Molasi",
+    post: "Social Media Consultant",
     img: Lovely5,
   },
 ];
@@ -152,6 +158,20 @@ const TeamMember = () => {
               <p className="md:text-[25px] text-[]16px">Faisal Saleem
 </p>
               <p className="md:text-[20px] text-[]16px">Museum Educator</p>
+            </div>
+          </div>
+          <div className="bg-white">
+            <div>
+              <Image
+                src={Lovely8}
+                alt="Faisal"
+                className="h-[350px] w-[300px] object-cover"
+              />
+            </div>
+            <div className="flex flex-col justify-center items-center gap-1 py-4">
+              <p className="md:text-[25px] text-[]16px">Arun Molasi
+</p>
+              <p className="md:text-[20px] text-[]16px">Social Media Consultant</p>
             </div>
           </div>
         </div>

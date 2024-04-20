@@ -10,7 +10,7 @@ const NeemGalary = () => {
     <div className='bg-white pb-10 '>
    <div className='container mx-auto'>
 <div>
-    <h3 className='md:text-[45px] text-[32px] text-center font-Yeseva'>Neem Ki Haveli Gallery</h3>
+    <h3 className='md:text-[40px] text-[30px] text-center font-Yeseva'>Neem Ki Haveli Gallery</h3>
     <div className='flex flex-col md:flex-row justify-center items-center py-10 gap-10'>
 <div className='lg:w-[50%] flex justify-center items-center w-full'>
     <div>
@@ -24,7 +24,7 @@ const NeemGalary = () => {
 </div>
     </div>
     <div className='bg-body rounded-full py-5 px-2 md:px-0'>
-        <p className='md:text-[30px] text-center text-[17px] font-Alice'>To showcase your artwork, send us your proposals : <Link href="mailto:info@kathika.in" className="text-blue-500 cursor-pointer">
+        <p className='md:text-[28px] text-center text-[15px] font-Alice'>To showcase your artwork, send us your proposals : <Link href="mailto:info@kathika.in" className="text-blue-500 cursor-pointer">
   info@kathika.in
 </Link></p>
     </div>

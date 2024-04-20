@@ -64,15 +64,15 @@ const Footer = () => {
                 <div>
                   
                 </div>
-                <div className="flex justify-start mb-2 items-center mt-6 gap-4">
+                <Link href={'https://www.google.com/maps/dir//1237,+Gali+Khatikan,+Imli+Mohalla,+Mohalla+IMLI,+Kucha+Pati+Ram,+Sitaram+Bazar,+Delhi,+110006/@28.6460779,77.1449627,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x390cfd66c498ac35:0x4a10b8056a424dd6!2m2!1d77.2273709!2d28.6461018?entry=ttu'} target="_blank" className="flex justify-start mb-2  items-center mt-6 gap-4">
               
                     <FaLocationDot className="text-white text-[20px]" />
                  
-                  <p className="  text-[#FFF5EE90] ">
+                  <p className="  text-[#FFF5EE90] hover:text-white ">
                     Kathika Haveli, Imli Mohalla,<br/> Kucha Pati Ram, Sita Ram Bazaar,<br/>
                     Gali Khatikan, Near Himmat<br/> Garh Police Station, Delhi 110006
                   </p>
-                </div>
+                </Link>
 
                 <div className="  flex gap-4 mb-2 ">
              
@@ -93,14 +93,14 @@ const Footer = () => {
                     <div className="flex justify-start items-center gap-2">
                       <p className="text-[#FFF5EE90]">David:</p>
                       <Link href="tel:+919811276231">
-    <a className=" text-[#FFF5EE90]">+91 9811276231</a>,
+    <a className=" text-[#FFF5EE90] hover:text-white">+91 9811276231</a>,
   </Link>
                      
                     </div>
                     <div className="flex justify-start items-center gap-2">
                       <p className="text-[#FFF5EE90]">Lovely:</p>
                       <Link href="tel:+919650339839">
-    <a className=" text-[#FFF5EE90]">+91 9650339839</a>,
+    <a className=" text-[#FFF5EE90] hover:text-white">+91 9650339839</a>,
   </Link>
                       
                     </div>
@@ -289,10 +289,10 @@ const Footer = () => {
               className="animate_top"
             >
               <ul className="flex items-center gap-8">
-                <li>
-                  <a href="#" className="text-[#FFF5EE90] hover:text-[white]">
+                <li className="text-[#FFF5EE90] ">
+                
                     English
-                  </a>
+              
                 </li>
                 {/* <li>
                   <a href="#" className="text-[#FFF5EE90] hover:text-[white]">
@@ -300,9 +300,9 @@ const Footer = () => {
                   </a>
                 </li> */}
                 <li>
-                  <a href="#" className="text-[#FFF5EE90] hover:text-[white]">
+                  <Link href="/contact" className="text-[#FFF5EE90] hover:text-[white]">
                     Support
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </motion.div>

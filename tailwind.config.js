@@ -27,6 +27,7 @@ module.exports = {
       fontFamily: {
         Yeseva: ['Yeseva One', 'serif'],
         Alice:  ['Heebo', 'serif'],
+        Jost:  [ "Jost", 'sans-serif'],
        
       
         

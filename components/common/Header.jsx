@@ -29,7 +29,7 @@ const Header = () => {
     <header className={`fixed left-0 top-0 z-50 w-full bg-white`}>
       <div className="">
         <div>
-          <ul className="flex justify-between items-center pr-4">
+          <ul className="flex justify-between gap-4 items-center pl-5">
             <li>
               <Link  
                 href={'/'}
@@ -38,11 +38,11 @@ const Header = () => {
                 }`}
                 onClick={() => handleSetActiveLink('/')}>
                 <Image
-                  src="/logo/logo1.png"
+                  src="/logo/logo-light.svg"
                   alt="logo"
                   width={120}
                   height={25}
-                  className=" object-cover"
+                  className="py-3  object-cover"
                 />
               </Link>
             </li>
@@ -64,12 +64,12 @@ const Header = () => {
                   activeLink.startsWith('/about') ? 'opacity-100 visible' : ''
                 }`}
               >
-                <div className="relative top-8  bg-body border-2 border-black   w-full">
+                <div className="relative top-8  bg-body    w-full">
                   <div className="relative z-10 ">
                     <div className=" flex flex-col gap-3 justify-center items-center ">
                       <Link
                         href={'/about#our-story'}
-                        className={`border-b-2 border-b-black w-full py-2 text-center hover:text-[#c8ae91]   ${
+                        className={` w-full py-2 text-center hover:text-[#c8ae91]   ${
                           activeLink === '/about#our-story' ? 'text-[#c8ae91]' : ''
                         }`}
                         onClick={() => handleSetActiveLink('/about#our-story')}
@@ -78,7 +78,7 @@ const Header = () => {
                       </Link>
                       <Link
                         href={'/about#kathika-museum'}
-                        className={`border-b-2 border-b-black w-full pb-2 text-center hover:text-[#c8ae91]  ${
+                        className={` w-full pb-2 text-center hover:text-[#c8ae91]  ${
                           activeLink === '/about#kathika-museum' ? 'text-[#c8ae91]' : ''
                         }`}
                         onClick={() => handleSetActiveLink('/about#kathika-museum')}
@@ -127,12 +127,12 @@ const Header = () => {
                   activeLink.startsWith('/experiences-activities') ? 'opacity-100 visible' : ''
                 }`}
               >
-                <div className="relative top-8  bg-body   border-2 border-black   w-full">
+                <div className="relative top-8  bg-body      w-full">
                   <div className="relative z-10 ">
                     <div className=" flex flex-col gap-3 justify-center items-center">
                       <Link
                         href={'/experiences-activities#experience'}
-                        className={`border-b-2 border-b-black w-full py-2 text-center hover:text-[#c8ae91]   ${
+                        className={` w-full py-2 text-center hover:text-[#c8ae91]   ${
                           activeLink === '/experiences-activities#experience' ? 'text-[#c8ae91]' : ''
                         }`}
                         onClick={() => handleSetActiveLink('/experiences-activities#experience')}
@@ -141,7 +141,7 @@ const Header = () => {
                       </Link>
                       <Link
                         href={'/experiences-activities#brunch'}
-                        className={`border-b-2 border-b-black w-full pb-2 text-center hover:text-[#c8ae91]   ${
+                        className={` w-full pb-2 text-center hover:text-[#c8ae91]   ${
                           activeLink === '/experiences-activities#brunch' ? 'text-[#c8ae91]' : ''
                         }`}
                         onClick={() => handleSetActiveLink('/experiences-activities#brunch')}
@@ -150,7 +150,7 @@ const Header = () => {
                       </Link>
                       <Link
                         href={'/experiences-activities#baithak'}
-                        className={`border-b-2 border-b-black w-full pb-2 text-center hover:text-[#c8ae91]   ${
+                        className={` w-full pb-2 text-center hover:text-[#c8ae91]   ${
                           activeLink === '/experiences-activities#baithak' ? 'text-[#c8ae91]' : ''
                         }`}
                         onClick={() => handleSetActiveLink('/experiences-activities#baithak')}
@@ -221,7 +221,7 @@ const Header = () => {
               </Link>
               
                 </li>
-                <div className="pl-4">
+                <div className="">
     <div className="lg:hidden flex flex-[1 0 0] border  bg-[rgba(255, 255, 255, 0.80)] rounded-lg  shadow-md  p-[8px]  " >
                 <GiHamburgerMenu className="text-[28px] text-black cursor-pointer " onClick={toggleMobileNav} />
               </div>

@@ -12,7 +12,7 @@ const Neighbourhood = () => {
        <div className='flex flex-col  gap-10 justify-between items-center py-20 px-10 '>
 <div className='flex flex-col items-center justify-center  gap-3  w-full'> 
              <h3 className='md:text-[45px] text-[32px] text-center font-Yeseva py-5'>{`Kathika Neighbourhood Walks`}</h3>
-          <p className='md:text-[27px] text-[16px] font-Alice text-center text-black'>{`Neighbourhood Walks conducted by Kathika is a pleasant way to explore the local surroundings of Old Delhi, interact with the communities and enjoy the history protected in the lanes of the walled city`} </p>
+          <p className='md:text-[20px] leading-7 text-[16px]  text-center text-black'>{`Neighbourhood Walks conducted by Kathika is a pleasant way to explore the local surroundings of Old Delhi, interact with the communities and enjoy the history protected in the lanes of the walled city`} </p>
 
            </div>
           
