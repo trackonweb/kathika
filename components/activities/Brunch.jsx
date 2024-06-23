@@ -14,8 +14,6 @@ const Brunch = () => {
              <h3 className='md:text-[45px] text-[32px] text-center font-Yeseva py-5'>{`Kathika Cultural Brunch`}</h3>
           <p className='md:text-[20px] leading-7  text-[16px]  text-center text-black'>{`Indulge your  senses and savour the vibrant flavours of Old Delhi at our Kathika Cultural Brunch. 
 `} </p>
-<p className='md:text-[20px]  text-[16px] leading-7 text-center text-black'>{`Indulge your  senses and savour the vibrant flavours of Old Delhi at our Kathika Cultural Brunch. 
-`}</p>
            </div>
           
        </div>
