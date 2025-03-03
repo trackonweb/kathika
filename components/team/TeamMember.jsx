@@ -20,17 +20,17 @@ const list = [
     post: "Director",
     img: Lovely4,
   },
-
+ {
+    title: "Javeria Tanveer",
+    post: "Heritage Education Specialist",
+    img: Lovely2,
+  },
   {
     title: "Lovely Bhadra",
     post: "Research & Content Manager",
     img: Lovely1,
   },
-  {
-    title: "Javeria Tanveer",
-    post: "Heritage Education Specialist",
-    img: Lovely2,
-  },
+ 
   {
     title: "Meghna Mitra",
     post: "Museum Assistant",
