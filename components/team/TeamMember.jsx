@@ -114,8 +114,8 @@ const TeamMember = () => {
               />
             </div>
             <div className="flex flex-col justify-center items-center gap-1 py-4 ">
-              <p className="md:text-[25px] text-[]16px">Tanuka Guria</p>
-              <p className="md:text-[20px] text-[]16px">Research & Content Manager</p>
+              <p className="md:text-[25px] text-[]16px">Javeria Tanveer</p>
+              <p className="md:text-[20px] text-[]16px">Heritage Education Specialist</p>
             </div>
           </div>
           <div className="bg-white">
