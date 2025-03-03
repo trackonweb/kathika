@@ -27,8 +27,8 @@ const list = [
     img: Lovely1,
   },
   {
-    title: "Tanuka Guria",
-    post: "Research & Content Manager",
+    title: "Javeria Tanveer",
+    post: "Heritage Education Specialist",
     img: Lovely2,
   },
   {
