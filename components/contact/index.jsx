@@ -19,8 +19,8 @@ const ContactSection = () => {
     <h5 className='md:text-[30px] text-[22px] font-Alice text-center font-bold '>Kathika Museum Visit</h5>
     <p className='md:text-[25px] text-[20px] text-center font-Alice'>For Enquiry - </p>
 <div className='flex flex-col justify-center items-center'>
-<Link href="tel:+919938280195"  className='md:text-[30px] text-[17px]  text-center font-Alice'> +91 9938280195
-</Link>
+{/* <Link href="tel:+919938280195"  className='md:text-[30px] text-[17px]  text-center font-Alice'> +91 9938280195
+</Link> */}
     <Link  href="tel:+919650339839"  className='md:text-[30px] text-[17px]  text-center font-Alice'> +91 9650339839</Link>
 </div>
 
