@@ -128,7 +128,7 @@ const TeamMember = () => {
           </div>
         </div>
         <div className="flex  flex-col md:flex-row justify-center items-center gap-10">
-          <div className="bg-white">
+{/*           <div className="bg-white">
             <div>
               <Image
                 src={Lovely3}
@@ -140,7 +140,7 @@ const TeamMember = () => {
               <p className="md:text-[25px] text-[]16px">Meghna Mitra</p>
               <p className="md:text-[20px] text-[]16px">Museum Assistant</p>
             </div>
-          </div>
+          </div> */}
           <div className="bg-white">
             <div>
               <Image
