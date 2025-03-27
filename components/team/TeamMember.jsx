@@ -31,11 +31,6 @@ const list = [
     img: Lovely1,
   },
  
-  {
-    title: "Meghna Mitra",
-    post: "Museum Assistant",
-    img: Lovely3,
-  },
 
   {
     title: "David",
