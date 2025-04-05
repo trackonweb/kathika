@@ -15,10 +15,10 @@ const ContactModel = ({handleCloseContactModel, handleOpenContactModel}) => {
         <h3 className='text-[45px] font-Yeseva'>Contact</h3>
     <div className='flex flex-col justify-center items-center pt-5 gap-3'>
    
-    <Link href="tel:+919938280195">
+{/*     <Link href="tel:+919938280195">
     <a className="font-jost font-[400] text-[18px] text-blue-600"> +91 9938280195
 </a>,
-  </Link>
+  </Link> */}
 
 <Link href="tel:+919650339839">
     <a className="font-jost font-[400] text-[18px] text-blue-600"> +91 9650339839</a>,
