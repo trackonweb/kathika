@@ -12,15 +12,15 @@ import HeroSection from "@/components/common/HeroSection";
 export default function Home() {
   return (
    <>
-   <ImageSlider images={[Slide1 ,Slide2, Slide3]} text={`Welcome to Kathika`} des={`Kathika, the Haveli of stories is one-of-a-kind Museum and Cultural Centre situated in the historic neighbourhood of Kucha Pati Ram in Sita Ram Bazaar, Old Delhi. It endeavors to promote and celebrate the vibrant living cultures of Delhi and beyond.
-`}/>
-   <HeroSection heading={`Welcome to Kathika`} des1={`Kathika, the Haveli of stories is one-of-a-kind Museum and Cultural Centre situated in the historic neighbourhood of Kucha Pati Ram in Sita Ram Bazaar, Old Delhi. It endeavors to promote and celebrate the vibrant living cultures of Delhi and beyond.
-`} />
+//    <ImageSlider images={[Slide1 ,Slide2, Slide3]} text={`Welcome to Kathika`} des={`Kathika, the Haveli of stories is one-of-a-kind Museum and Cultural Centre situated in the historic neighbourhood of Kucha Pati Ram in Sita Ram Bazaar, Old Delhi. It endeavors to promote and celebrate the vibrant living cultures of Delhi and beyond.
+// `}/>
+//    <HeroSection heading={`Welcome to Kathika`} des1={`Kathika, the Haveli of stories is one-of-a-kind Museum and Cultural Centre situated in the historic neighbourhood of Kucha Pati Ram in Sita Ram Bazaar, Old Delhi. It endeavors to promote and celebrate the vibrant living cultures of Delhi and beyond.
+// `} />
     
-   <Heart/>
-   <Museum/>
-   <MuseumCard/>
-   <Featured/>
+//    <Heart/>
+//    <Museum/>
+//    <MuseumCard/>
+//    <Featured/>
    </>
   );
 }
